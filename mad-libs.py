@@ -1,7 +1,10 @@
 
 def generateMadLib():
-    print("*******  Welcome  **********")
+    print("*******  Welcome  ********")
+    print("You will be prompted for different types of words from the English language.")
+    print("Enter a word for each prompt and at then end you will have a story.")
 
+    
 
 answer = input("Would you like to do a Mad Lib? (yes/no) ")
 
