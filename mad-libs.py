@@ -1,3 +1,5 @@
+from os import system
+
 def promptBeginning():
     answer = input("Would you like to do a Mad Lib? (yes/no) ")
 
@@ -41,5 +43,7 @@ def populateMadLib(inputs):
     madLib += "Eventually it is discovered that our hero's long-time colleague, " + inputs[8] + ", distinguished by his " + inputs[9] + ", is trying to turn " + inputs[3] + " into a weapon, leading to a climatic (if pointless) battle in downtown " + inputs[10] + "  with an evil version of the same giant alter-ego called " + inputs[11] + ".\n"
     madLib += "Eventually the enemy is subdued by " + inputs[12] + " him with a " + inputs[13] + "."
     madLib += "In the final reel, " + inputs[14] + " joins him in a " + inputs[15] + "."
+    print(madLib)
+    system("say " + madLib)
 
 promptBeginning()
