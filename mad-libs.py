@@ -1,3 +1,4 @@
+from os import system
 def promptBeginning():
     answer = input("Would you like to do a Mad Lib? (yes/no) ")
 
@@ -26,7 +27,7 @@ def generateMadLib():
     facialFeature = input("Facial Feature: ")
     city = input("US City: ")
     sillyName5 = input("Fifth Silly Name: ")
-    verb = input("Verb: ")
+    verb = input("Verb ending in -ing: ")
     noun = input("Noun: ")
     actor = input("Actor: ")
     noun2 = input("Noun: ")
@@ -35,11 +36,27 @@ def generateMadLib():
     populateMadLib(madLibList)
 
 def populateMadLib(inputs):
-    print("Meet our hero " + inputs[0] + ", a super intelligent " + inputs[1] + ".")
-    print("A run-in with the military of" + inputs[2] + " leads him to create his alter-ego, " + inputs[3] + ", a " + " " + inputs[4] + " " + inputs[5] + " giant caplable of great destuction.")
-    print("He " + inputs[6] + " battles the military with his girlfriend " + inputs[7] + ".")
-    print("Eventually it is discovered that our hero's long-time colleague, " + inputs[8] + ", distinguished by his " + inputs[9] + ", is trying to turn " + inputs[3] + " into a weapon, leading to a climatic (if pointless) battle in downtown " + inputs[10] + "  with an evil version of the same giant alter-ego called " + inputs[11] + ".")
-    print("Eventually the enemy is subdued by " + inputs[12] + "ing him with a " + inputs[13] + ".")
-    print("In the final reel, " + inputs[14] + " appears to propose joining him in a " + inputs[15] + ".")
+    madLib0 = "Meet our hero {}, a super intelligent {}.".format(inputs[0], inputs[1])
+    printAndSpeak(madLib0)
+
+    madLib1 = "A run-in with the military of {} leads him to create his alter-ego, {}, a {}, {} giant, capable of great destruction.".format(inputs[2], inputs[3], inputs[4], inputs[5])
+    printAndSpeak(madLib1)
+
+    madLib2 = "He {} battles the military with his girlfriend {}.".format(inputs[6], inputs[7])
+    printAndSpeak(madLib2)
+
+    madLib3 = "Eventually it is discovered that long-time colleague of our hero, {}, distinguished by his {}, is trying to turn {} into a weapon, leading to a climatic, if pointless, battle in downtown {} with an evil version of the same giant alter-ego called {}.".format(inputs[8], inputs[9], inputs[3], inputs[10], inputs[11])
+    printAndSpeak(madLib3)
+
+    madLib4 = "Eventually the enemy is subdued by {} him with a {}.".format(inputs[12], inputs[13])
+    printAndSpeak(madLib4)
+
+    madLib5 = "In the final reel, {} joins him in a {}.".format(inputs[14], inputs[15])
+    printAndSpeak(madLib5)
+
+
+def printAndSpeak(sentence):
+    print(sentence)
+    system("say " + sentence)
 
 promptBeginning()
