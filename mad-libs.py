@@ -45,7 +45,7 @@ def populateMadLib(inputs):
     madLib2 = "He {} battles the military with his girlfriend {}.".format(inputs[6], inputs[7])
     printAndSpeak(madLib2)
 
-    madLib3 = "Eventually it is discovered that our hero\'s long-time colleague, {}, distinguished by his {}, is trying to turn {} into a weapon, leading to a climatic, if pointless, battle in downtown {} with an evil version of the same giant alter-ego called {}.".format(inputs[8], inputs[9], inputs[3], inputs[10], inputs[11])
+    madLib3 = "Eventually it is discovered that long-time colleague of our hero, {}, distinguished by his {}, is trying to turn {} into a weapon, leading to a climatic, if pointless, battle in downtown {} with an evil version of the same giant alter-ego called {}.".format(inputs[8], inputs[9], inputs[3], inputs[10], inputs[11])
     printAndSpeak(madLib3)
 
     madLib4 = "Eventually the enemy is subdued by " + inputs[12] + " him with a " + inputs[13] + "."
