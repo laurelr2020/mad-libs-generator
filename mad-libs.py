@@ -42,10 +42,10 @@ def populateMadLib(inputs):
     madLib1 = "A run-in with the military of " + inputs[2] + " leads him to create his alter-ego, " + inputs[3] + ", a " + inputs[4] + ", " + inputs[5] + " giant, capable of great destruction."
     printAndSpeak(madLib1)
 
-    madLib2 = "He " + inputs[6] + " battles the military with his girlfriend " + inputs[7] + "."
+    madLib2 = "He {} battles the military with his girlfriend {}.".format(inputs[6], inputs[7])
     printAndSpeak(madLib2)
 
-    madLib3 = "Eventually it is discovered that our hero's long-time colleague, " + inputs[8] + ", distinguished by his " + inputs[9] + ", is trying to turn " + inputs[3] + " into a weapon, leading to a climatic (if pointless) battle in downtown " + inputs[10] + " with an evil version of the same giant alter-ego called " + inputs[11]
+    madLib3 = "Eventually it is discovered that our heros long-time colleague, {}, distinguished by his {}, is trying to turn {} into a weapon, leading to a climatic, if pointless, battle in downtown {} with an evil version of the same giant alter-ego called {}.".format(inputs[8], inputs[9], inputs[3], inputs[10], inputs[11])
     printAndSpeak(madLib3)
 
     madLib4 = "Eventually the enemy is subdued by " + inputs[12] + " him with a " + inputs[13] + "."
