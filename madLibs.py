@@ -6,7 +6,7 @@ class MadLibs:
 
     def printAndSpeak(self, script):
         for line in script:
-            print(script[line])
+            print(line)
             script("say " + script[line])
 
 def createSuperHeroMadLib():
